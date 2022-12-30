@@ -7,3 +7,10 @@
 body{
     background: url('/app/data/img/Mobile/BackgroundMobileBlack.jpg') no-repeat top center/cover;
 }
+
+#container{
+    height: 712px;
+    width: 360px;
+    margin: 0 auto;
+    border: solid white;
+}
