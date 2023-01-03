@@ -37,7 +37,7 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 16px;
-
+    padding: 24px 0;
 }
 ul li a{
     text-decoration: none;
@@ -58,3 +58,17 @@ ul li a:hover{
     background: rgba(255, 255, 255, 0.05);
 
 }
+
+#icons-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-size: 24px;
+    padding-top: 24px;
+}
+
+#icons-social a{
+    text-decoration: none;
+}
+
