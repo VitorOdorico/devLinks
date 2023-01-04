@@ -19,7 +19,7 @@ body{
     --text-color: black;
     /* --stroke-color: black; */
     --bg-url: url('/app/data/img/Mobile/BackgroundMobileWhite.jpg');
-    --stroke-color: #ffffff00;
+    --stroke-color: rgba(255, 255, 255, 0);
     
 }
 
@@ -65,7 +65,7 @@ ul li a{
 }
 
 ul li a:hover{
-    border: solid 1px var(--text-color); 
+    border: solid 1px var(--stroke-color); 
     background: rgba(255, 255, 255, 0.05);
 
 }
