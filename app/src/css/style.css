@@ -10,7 +10,12 @@
 :root{
     --text-color: white;
     --bg-url: url('/app/data/img/Mobile/BackgroundMobileBlack.jpg');
-    --stroke-color: #ffffff80;
+    --stroke-color: rgba(255, 255, 255, 0.502);
+    --stroke-color-hover: rgba(255, 255, 255, 0.502);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(19, 19, 19, 0.1);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url('/app/data/svg/moon-light.svg');
 }
 body{
     background: var(--bg-url) no-repeat top center/cover;
@@ -19,7 +24,13 @@ body{
     --text-color: black;
     /* --stroke-color: black; */
     --bg-url: url('/app/data/img/Mobile/BackgroundMobileWhite.jpg');
-    --stroke-color: rgba(255, 255, 255, 0);
+    --stroke-color: rgba(0,0,0,0.5);
+    --stroke-color-hover: rgb(0, 0, 0);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(0, 0, 0, 0.263);
+    --highlight-color: rgba(0,0,0,0.1);
+    --switch-bg-url: url('/app/data/svg/sun-light.svg');
+
     
 }
 
@@ -43,6 +54,17 @@ body{
     line-height: 24px;
     margin-top: 8px;
 }
+
+/* switch */
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url)center no-repeat;
+    border: 0;
+    border-radius: 50%;
+   
+}
 ul{
     list-style: none;
     display: flex;
@@ -58,15 +80,15 @@ ul li a{
     justify-content: center;
     align-items: center;
     padding: 16px 24px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--surface-color);
     backdrop-filter: blur(4px);
     font-weight:bold;
     transition: background 0.5s;
 }
 
 ul li a:hover{
-    border: solid 1px var(--stroke-color); 
-    background: rgba(255, 255, 255, 0.05);
+    border: solid 1px var(--stroke-color-hover); 
+    background: var(--surface-color-hover);
 
 }
 
@@ -89,7 +111,7 @@ ul li a:hover{
 }
 
 #icons-social a:hover{
-    background: rgba(255, 255, 255, 0.2);
+    background:var(--highlight-color);
 }
 #footer{
     padding: 24px 0;
