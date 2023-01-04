@@ -10,16 +10,17 @@
 :root{
     --text-color: white;
     --bg-url: url('/app/data/img/Mobile/BackgroundMobileBlack.jpg');
-    --stroke-color: rgba(255, 255, 255, 0.5);
+    --stroke-color: #ffffff80;
 }
 body{
     background: var(--bg-url) no-repeat top center/cover;
 }
 .light{
     --text-color: black;
+    /* --stroke-color: black; */
     --bg-url: url('/app/data/img/Mobile/BackgroundMobileWhite.jpg');
-    --stroke-color: rgba(255, 255, 255, 0);
-
+    --stroke-color: #ffffff00;
+    
 }
 
 #container{
